@@ -1,0 +1,139 @@
+<!-- 
+                User Story #1: I can see a title with id="title" in H1 sized text.
+
+                User Story #2: I can see a short explanation with id="description" in P sized text.
+
+                User Story #3: I can see a form with id="survey-form".
+
+                User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+
+                User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+                
+                User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. ??????????
+
+                User Story #7: Inside the form, I can enter a number in a field with id="number".
+
+                User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+                User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+                User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+                User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+                User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+                User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+                User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+                User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+                User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <h1 id="title">Javabean Survey Form</h1>
+    <p id="description">Thank you for taking our survey. This helps us gain a better understanding of our customer's needs.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name"
+            placeholder="Your name"
+            required>
+
+        <label id="email-label" for="email" >Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="email@domain.com"
+            required>
+
+        <label id="number-label" for="number">Age (optional)</label>
+        <input 
+            type="number"
+            id="number"
+            name="number" 
+            placeholder="Age"
+            min="13"
+            max="130">
+
+        <label for="roast-dropdown">What's your favorite roast profile?</label>
+        <select name="roast-dropdown" id="roast-dropdown">
+            <option placeholder="Select an option">Select an option</option>
+            <option value="Light">Light</option>
+            <option value="Medium">Medium</option>
+            <option value="Medium-Dark">Medium-Dark</option>
+            <option value="Dark">Dark</option>
+            <option value="Espresso">Espresso</option>
+        </select>
+
+        <p>Would you be interested in receiving weekly newsletter emails from us?</p>
+        <input
+            type="radio"
+            id="yes"
+            name="choice"
+            value="Yes">
+        <label for="yes">Yes</label>
+        <input
+            type="radio"
+            id="no"
+            name="choice"
+            value="No">
+        <label for="no">No</label>
+
+        <label for="dropdown">Which option is your preferred brewing method?</label>
+        <select name="dropdown" id="dropdown">
+            <option placeholder="Select an option">Select an option</option>
+            <option value="Aeropress">Aeropress</option>
+            <option value="Auto Drip">Auto Drip</option>
+            <option value="Cold Brew">Cold Brew</option>
+            <option value="French Press">French Press</option>
+            <option value="Pour Over">Pour Over</option>
+            <option value="Steeping">Steeping</option>
+            <option value="Other">Other</option>
+        </select>
+
+
+        <p>What would you like to see more of?</p>
+        <input type="checkbox" id="choice1" name="choice1" value="Podcasts">
+        <label for="choice1">Podcasts</label>
+        <input type="checkbox" id="choice2" name="choice2" value="YouTube Videos">
+        <label for="choice2">YouTube videos</label>
+        <input type="checkbox" id="choice3" name="choice3" value="Product Reviews">
+        <label for="choice3">Product Reviews</label>
+        <input type="checkbox" id="choice4" name="choice4" value="Tutorials">
+        <label for="choice4">Tutorials</label>
+        <input type="checkbox" id="choice5" name="choice5" value="Unboxing Videos">
+        <label for="choice5">Unboxing Videos</label>
+
+
+        <p>Any comments or suggestions?</p>
+        <textarea name="message" rows="15" cols="90" placeholder="Enter your comment here..."></textarea>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+
+</html>

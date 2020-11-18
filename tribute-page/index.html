@@ -1,0 +1,120 @@
+<!-- 
+
+                                                    USER STORY
+
+User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+
+User Story #3: I should see a div element with a corresponding id="img-div".
+
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
+
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+User Story #9: The img element should be centered within its parent element. 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Javabean | Thank You</title>
+</head>
+
+<body id="main">
+    
+    <div id="top">
+        <h1 id="title">To the coffee farmers around the world...</h1>
+    </div>
+        
+    <div id="img-div">
+        <img id="image" src="assets/img/julio-deras-voiy0lDEBOE-unsplash.jpg" alt="Photo of a happy, proud Guatemalan coffee farmer">
+        <p id="img-caption">"Young coffee producer, part of the Paralelo 14 family in Guatemala. Coffee is opportunity." -<a href="https://unsplash.com/@juliogderas"> Julio Deras</a></p>
+    </div>
+
+    <section id="tribute-info">
+        <h2>
+            At Javabean, we would like to sincerely thank each and every one of you for keeping the industry thriving. Coffee has built the foundation for a lot of relationships,
+            whether it's with colleagues, friends, family, romantic partners, and even the amazing staff at local coffee shops and roasters. To increase global knowledge 
+            of the coffee industry, we would like to educate our readers on the rich history, as well as how they can contribute by shopping for fair trade or organic coffee. Again,
+            thank you for keeping the industry thriving!
+        </h2>
+        
+        <div>
+            <h3>Here's some interesting facts about coffee:</h3>
+
+            <h4>Unknown Origin</h4>
+            <p>
+                Although there hasn't been any discovery in terms of where coffee originated from, there are stories in regions such as Ethiopia, The Arabian Peninsula,
+                and parts of Europe that explains how coffee has been accidentally discovered, resulting in it's cultivation and trade.
+            </p>
+
+            <h4>Rapid Growth in Demand</h4>
+            <p>
+                As demand grew outside of the Arabian region, many regions around the world began cultivating the plant. Some areas succeeded, some failed. India failed in their efforts
+                in the 17th century but succeeded once they started planting in Indonesia.
+            </p>
+
+            <h4>Attempts in Banning the Popular Beverage</h4>
+            <p>
+                Although the beverage became extremely popular, it did face criticism, especially from places such as Mecca and Italy during the 16th century.
+                In 1511, Mecca banned the beverage since the government believed it "stimulated radical thinking and hanging out", which the governor thought 
+                could cause opposition to their authority.
+            </p>
+
+            <h4>Present Date</h4>
+            <p>
+                Nowadays, coffee is still an extremely popular beverage where billions of cups are served daily around the world. In fact, here in the United States, Americans spend an average
+                of about $1,100 a year on the beverage, according to the <a id="h4-p-a" href="https://www.mentalfloss.com/article/69146/16-quick-coffee-facts-national-coffee-day" 
+                target="_blank">Mental Floss</a>.
+            </p>
+
+            <h4>A Struggling Industry</h4>
+            <p>
+                Unfortunately, coffee farmers are suffering due to them not being compensated fairly in terms of wages
+                and the negative impacts from global warming. To counteract this, there has been a strong push in coffee culture that encourages fair wage practices to keeps
+                the industry thriving. As a result of this, there are many coffee subscription services and even local/regional coffee roasters that support fair trade practices.
+                Those practices entails farmers receiving fair prices, fair working conditions, environmental sustainability, direct trade, and community development.
+            </p>
+            
+            <h4>Promoting Change</h4>
+            <p>
+                Coffee enthusiasts around the world can play their part by purchasing coffee from local or even regional coffee shops and roasteries. Just make sure those
+                businesses are practicing the fair trade practices mentioned above.
+            </p>
+        </div>
+
+    </section> <!-- ./ #tribute-info -->
+
+    <div id="bottom">
+        <p>
+            To learn more about the history of the coffee industry, understanding fair trade practices, and a few places to shop around 
+            for fair trade certified coffee, please visit the following links:
+        </p>
+
+        <ul>
+            <li><a href="https://study.com/academy/lesson/history-of-coffee-facts-timeline.html" target="_blank" id="tribute-link">More historical facts about coffee</a></li>
+            <li><a href="https://www.mentalfloss.com/article/69146/16-quick-coffee-facts-national-coffee-day" target="_blank" id="tribute-link">Quick coffee facts, Mental Floss</a></li>
+            <li><a href="https://nationalcoffee.blog/2015/12/15/5-attempts-to-ban-coffee-in-history/" target="_blank" id="tribute-link">Attempts to ban Coffee</a></li>
+            <li><a href="https://www.ncausa.org/About-Coffee/History-of-Coffee" target="_blank" id="tribute-link">The History of Coffee, National Coffee Association USA</a></li>
+            <li><a href="https://groundsforchange.com/blogs/learn/fair-trade-coffee" target="_blank" id="tribute-link">Fair Trade Practices, Grounds for Change</a></li>
+            <li><a href="https://www.fairtradecertified.org/shopping-guides/fair-trade-coffee" target="_blank" id="tribute-link">Fair trade coffee, Fair Trade Certified &#8482;</a></li>
+        </ul>            
+    </div> <!-- ./ #bottom -->
+    
+    <footer>Copyright &copy; 2020 Javabean. All rights reserved</footer>
+
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

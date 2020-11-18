@@ -1,0 +1,150 @@
+/* Basic browser reset */
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+
+body {
+    text-align: center;
+    background-color: #07020D;
+    background-size: cover;
+    font-family: ABeeZee, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Anchor styling */
+#img-caption a, #bottom a, #img-caption a, #h4-p-a {
+    text-decoration: none;
+    color: #5c88ff;
+    font-size: small;
+}
+
+#h4-p-a {
+    font-size: inherit;
+}
+
+
+/* #main styling */
+
+#main {
+    border: hsla(150, 100%, 53%, 1) 20px solid;
+    margin: 0;
+}
+
+
+
+
+/* Top Styling */
+
+h1 { font-size: 4em; }
+
+#top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* Img-Div styling */
+
+#img-div {
+    background-color: #c2b6b641;
+    padding-top: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#image { /* Centers image as well as make it responsive */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    max-width: 60%;
+    height: auto;
+}
+
+#img-caption {
+    padding-top: 18px;
+    padding-bottom: 36px;
+}
+
+
+
+/* Section styling */
+
+section {
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    padding: 60px 60px;
+    /* background-color: #c2b6b621; */
+    background-color: #07020D;
+}
+
+section div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section h2 {
+    text-align: left;
+    padding-bottom: 70px;
+    font-size: 1.75em;
+}
+
+section h4 {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+section div h3 { padding-bottom: 40px; }
+
+section p {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+
+
+
+/* #bottom styling */
+
+#bottom {
+    background-color: #c2b6b641;
+    margin: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+#bottom p {
+    margin-bottom: 20px;
+}
+
+
+#bottom li {
+    padding-top: 2px;
+}
+
+
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+
+/* 
+colors:
+0FFF87: spring green
+c2b6b641
+07020D: Xiketic
+*/
